@@ -1,30 +1,32 @@
 {
-    "name": "esm-resolution",
-    "version": "1.0.0",
-    "description": "npm package contents for issues with their TypeScript types, particularly ESM-related module resolution issues",
-
-    "scripts": {
-        "build": "tsc",
-        "ci": "npm run build"    
-    },
-    "keywords": [
-        "demo",
-        "typescript"
-    ],
-    "homepage": "https://github.com/shivam-sharma7/esm-resolution",
-    "bugs": {
-        "url": "https://github.com/shivam-sharma7/esm-resolution/issues"
-    },
-    "author": "Shivam Sharma",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/shivam-sharma7/esm-resolution.git"
-    },
-    "files": [
-        "dist"
-    ],
-    "type": "module",
-    "devDependencies": {
-        "typescript": "^5.5.4"
-    }
+  "name": "esm-resolution",
+  "version": "1.0.0",
+  "description": "npm package contents for issues with their TypeScript types, particularly ESM-related module resolution issues",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
+  },
+  "keywords": [
+    "demo",
+    "typescript"
+  ],
+  "homepage": "https://github.com/shivam-sharma7/esm-resolution",
+  "bugs": {
+    "url": "https://github.com/shivam-sharma7/esm-resolution/issues"
+  },
+  "author": "Shivam Sharma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivam-sharma7/esm-resolution.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
 }
