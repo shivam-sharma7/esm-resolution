@@ -4,14 +4,16 @@
   "description": "npm package contents for issues with their TypeScript types, particularly ESM-related module resolution issues",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build && npm run check-format",
+    "ci": "npm run build && npm run check-format && npm run check-exports",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack ."
   },
   "keywords": [
     "demo",
     "typescript"
   ],
+  "main": "dist/index.js",
   "homepage": "https://github.com/shivam-sharma7/esm-resolution",
   "bugs": {
     "url": "https://github.com/shivam-sharma7/esm-resolution/issues"
@@ -26,6 +28,7 @@
   ],
   "type": "module",
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   }
